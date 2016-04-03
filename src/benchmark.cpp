@@ -4,7 +4,6 @@
 #include <geometry_msgs/PoseStamped.h>
 #include <tf2_geometry_msgs/tf2_geometry_msgs.h>
 #include <iostream>
-#include <Eigen/Dense>
 
 class SubscribeAndPublish
 {
