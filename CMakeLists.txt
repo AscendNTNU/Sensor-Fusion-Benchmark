@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8.3)
 
-project(republish)
+project(benchmark)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
@@ -138,14 +138,14 @@ generate_messages(
 # add_dependencies(state_estimation_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 # include_directories("/usr/include/eigen3")
 ## Declare a C++ executable
-add_executable(republish src/republish.cpp)
+add_executable(benchmark src/benchmark.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
-add_dependencies(republish ${${republish}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(benchmark ${${benchmark}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(republish ${catkin_LIBRARIES} )
+target_link_libraries(benchmark ${catkin_LIBRARIES} )
 
 #############
 ## Install ##
